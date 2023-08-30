@@ -1,0 +1,15 @@
+app:
+  name: helloworld-poi-gateway-app
+  namespace: helloworld
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/helloworld-gateway
+  org: rhdh-deploy
+  name: helloworld-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: helloworld/poi-gateway-app
+  tag: latest
